@@ -1,0 +1,39 @@
+body {
+  background:linear-gradient(to top, #11111182 30%, transparent 70%), linear-gradient(to right, #11111152 30%, transparent 70%),url(../img/background.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  margin-top: 180px;
+}
+
+button.btn.btn-primary {
+  width: 100%;
+}
+
+.container-1 {
+  margin: 0 auto;
+  width: 478px;
+  padding: 50px;
+  background: rgb(2, 0, 36);
+  margin: 0 auto;
+  width: 478px;
+  padding: 50px;
+  background: linear-gradient(#e0e4e8, #7c899a);
+  background: rgb(2, 0, 36);
+  background: linear-gradient( 4deg, rgba(2, 0, 36, 1) 4%, rgb(63 3 226 / 0%) 51%, rgb(71 24 189 / 28%) 100%, rgb(5 5 245 / 0%) 100%);
+  /* border-end-end-radius: 50px;
+  border-top-left-radius: 50px; */
+}

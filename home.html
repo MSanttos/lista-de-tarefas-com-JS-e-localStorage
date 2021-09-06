@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Minha Lista de Tarefas</title>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row head">
+    <div class="col-md-6">
+      <h3>To-Do-List</h3>
+      <small class="text-muted">Lista de Tarefas</small>
+    </div>
+    <div class="col-md-6">
+      <i class="fa fa-user" aria-hidden="true" style="color:#fff"></i> <span id="user" style="color:#fff"> </span>
+      <button type="button" class="btn btn-primary" style="float: right; margin-top: 10px"><a href="index.html" style="color: #fff">Sair</a></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#modalRegistro">Adicionar tarefas</button>
+    </div>
+  </div>
+  <div class="row space--button">
+    <div class="col-md-12">
+      <div class="container">
+        <table class="table table-hover" id="tableDados">
+          <thead>
+            <tr>
+              <th scope="col" class="th--style">#</th>
+              <th scope="col" class="th--style">Título</th>
+              <th scope="col" class="th--style">Data</th>
+              <th scope="col" class="th--style">Status</th>
+              <th scope="col" class="th--style" style="width: 50px"></th>
+              <th scope="col" class="th--style" style="width: 50px"></th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="modalRegistroLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRegistro">Minhas Tarefas!!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <input type="hidden" id="modalEditar"/>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="titulo">Título</label>
+              <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Tarefa" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="data">Data</label>
+              <input type="date" name="data" id="data" class="form-control" required>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select name="status" id="status" class="form-control" placeholder="Informe o status da tarefa!" required>
+                <option value="" selected disabled>Selecione um status para sua tarefa!</option>
+                <option value="Pendente" id="Pendente">Pendente</option>
+                <option value="Em Andamento" id="Em Andamento">Em andamento</option>
+                <option value="Concluído" id="Concluído">Concluído</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary" id="salvar">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+</html>

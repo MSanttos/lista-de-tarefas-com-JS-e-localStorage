@@ -1,0 +1,24 @@
+body{
+  /* técnica NetFlix  de sombreamento*/
+  background-image: linear-gradient(to top, #11111182 30%, transparent 70%), linear-gradient(to right, #11111152 30%, transparent 70%),url(../img/fundo.jpeg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h3, .text-muted{
+  color: #fff !important;
+}
+.row.space--button{
+  margin-top: 20px;
+}
+.th--style{
+  color: #fff;
+}
+th.th--style.space--button{
+  padding-left: 50px;
+}
+.row.head {
+  background: #4950577a;
+  margin-bottom: 50px;
+  padding: 5px;
+}
